@@ -1,3 +1,5 @@
+![Alpha Hunt — Job Search & Auto-Apply Bot](docs/banner.png)
+
 # 🎯 Alpha Hunt — Job Search & Auto-Apply Bot
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)

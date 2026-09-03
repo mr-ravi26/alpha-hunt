@@ -1,0 +1,109 @@
+<svg width="1600" height="840" viewBox="0 0 1600 840" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="55%" stop-color="#0f1b2e"/>
+      <stop offset="100%" stop-color="#132238"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22c55e" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#22c55e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c2b42"/>
+      <stop offset="100%" stop-color="#16233a"/>
+    </linearGradient>
+    <linearGradient id="checkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#16a34a"/>
+    </linearGradient>
+    <linearGradient id="targetGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="840" fill="url(#bg)"/>
+  <circle cx="1250" cy="180" r="420" fill="url(#glow1)"/>
+  <circle cx="1420" cy="620" r="380" fill="url(#glow2)"/>
+
+  <!-- subtle dot grid texture -->
+  <g fill="#ffffff" opacity="0.05">
+    <path d="M0 40h1600M0 120h1600M0 200h1600M0 280h1600M0 360h1600M0 440h1600M0 520h1600M0 600h1600M0 680h1600M0 760h1600" stroke="#ffffff" stroke-width="1"/>
+  </g>
+
+  <!-- Target / crosshair emblem -->
+  <g transform="translate(120,110)">
+    <circle cx="40" cy="40" r="38" fill="none" stroke="url(#targetGrad)" stroke-width="6"/>
+    <circle cx="40" cy="40" r="22" fill="none" stroke="url(#targetGrad)" stroke-width="6"/>
+    <circle cx="40" cy="40" r="7" fill="url(#targetGrad)"/>
+  </g>
+
+  <!-- Title -->
+  <text x="118" y="330" font-family="Helvetica, Arial, sans-serif" font-size="118" font-weight="700" fill="#f8fafc">Alpha Hunt</text>
+  <text x="122" y="392" font-family="Helvetica, Arial, sans-serif" font-size="38" font-weight="400" fill="#93a5c4">Job Search &amp; Auto-Apply Bot</text>
+
+  <!-- Tag pills -->
+  <g font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="600">
+    <rect x="122" y="430" width="182" height="56" rx="28" fill="#122a1c" stroke="#22c55e" stroke-width="2"/>
+    <text x="213" y="466" fill="#4ade80" text-anchor="middle">$0 forever</text>
+
+    <rect x="322" y="430" width="336" height="56" rx="28" fill="#1a2036" stroke="#60a5fa" stroke-width="2"/>
+    <text x="490" y="466" fill="#93c5fd" text-anchor="middle">Runs on GitHub Actions</text>
+
+    <rect x="676" y="430" width="204" height="56" rx="28" fill="#241a36" stroke="#c084fc" stroke-width="2"/>
+    <text x="778" y="466" fill="#d8b4fe" text-anchor="middle">Open Source</text>
+  </g>
+
+  <text x="122" y="560" font-family="Helvetica, Arial, sans-serif" font-size="30" fill="#c3d0e5">Auto-applies when it's confident.</text>
+  <text x="122" y="602" font-family="Helvetica, Arial, sans-serif" font-size="30" fill="#c3d0e5">Asks you when it's not.</text>
+
+  <text x="122" y="700" font-family="Menlo, Consolas, monospace" font-size="26" fill="#5b7095">github.com/mr-ravi26/alpha-hunt</text>
+
+  <!-- Phone / notification card mockup -->
+  <g transform="translate(1140,150)">
+    <rect x="0" y="0" width="340" height="560" rx="34" fill="#0a1220" stroke="#26374f" stroke-width="3"/>
+    <rect x="14" y="14" width="312" height="532" rx="24" fill="#0e1626"/>
+
+    <!-- notification card 1: needs review -->
+    <g transform="translate(34,44)">
+      <rect x="0" y="0" width="272" height="118" rx="16" fill="url(#cardGrad)"/>
+      <circle cx="26" cy="28" r="12" fill="#fbbf24"/>
+      <text x="26" y="33" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#0b1220" text-anchor="middle">!</text>
+      <text x="48" y="34" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">Needs your review</text>
+      <rect x="24" y="52" width="220" height="12" rx="6" fill="#33465f"/>
+      <rect x="24" y="72" width="180" height="12" rx="6" fill="#33465f"/>
+      <rect x="24" y="92" width="140" height="12" rx="6" fill="#243349"/>
+    </g>
+
+    <!-- notification card 2: applied -->
+    <g transform="translate(34,182)">
+      <rect x="0" y="0" width="272" height="118" rx="16" fill="url(#cardGrad)"/>
+      <circle cx="26" cy="28" r="12" fill="url(#checkGrad)"/>
+      <path d="M20 28l4 5 9-10" stroke="#0b1220" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="48" y="34" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">Application submitted</text>
+      <rect x="24" y="52" width="220" height="12" rx="6" fill="#33465f"/>
+      <rect x="24" y="72" width="160" height="12" rx="6" fill="#33465f"/>
+      <rect x="24" y="92" width="120" height="12" rx="6" fill="#243349"/>
+    </g>
+
+    <!-- notification card 3: broad match -->
+    <g transform="translate(34,320)">
+      <rect x="0" y="0" width="272" height="118" rx="16" fill="url(#cardGrad)"/>
+      <circle cx="26" cy="28" r="12" fill="#60a5fa"/>
+      <circle cx="26" cy="26" r="4" fill="none" stroke="#0b1220" stroke-width="2"/>
+      <line x1="29" y1="29" x2="33" y2="33" stroke="#0b1220" stroke-width="2" stroke-linecap="round"/>
+      <text x="48" y="34" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">New matching job</text>
+      <rect x="24" y="52" width="220" height="12" rx="6" fill="#33465f"/>
+      <rect x="24" y="72" width="190" height="12" rx="6" fill="#33465f"/>
+      <rect x="24" y="92" width="130" height="12" rx="6" fill="#243349"/>
+    </g>
+
+    <rect x="34" y="470" width="272" height="56" rx="18" fill="#0e1626" stroke="#243349" stroke-width="2"/>
+    <circle cx="290" cy="498" r="16" fill="#1c2b42"/>
+  </g>
+</svg>
