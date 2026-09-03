@@ -1,0 +1,258 @@
+# ============================================================
+# Job Bot Configuration — EXAMPLE
+# Edit the keywords, locations, companies, and applicant info
+# below to match your own job search, then keep this file
+# (with your real details) in a PRIVATE repo only.
+# ============================================================
+
+# ------------------------------------------------------------
+# SEARCH TERMS
+# ------------------------------------------------------------
+# Jobs must match at least one keyword in the JOB TITLE.
+#
+# Broad enough to maximize reach, but focused enough to avoid
+# wasting applications on unrelated junior/QA/mobile roles.
+# ------------------------------------------------------------
+keywords:
+
+  # Core software engineering
+  - "Software Engineer"
+  - "Senior Software Engineer"
+  - "Staff Software Engineer"
+  - "Principal Software Engineer"
+  - "Software Development Engineer"
+  - "Senior Software Development Engineer"
+  - "SDE"
+  - "SDE II"
+  - "SDE III"
+
+  # Backend / Platform
+  - "Backend Engineer"
+  - "Senior Backend Engineer"
+  - "Backend Developer"
+  - "Senior Backend Developer"
+  - "Platform Engineer"
+  - "Senior Platform Engineer"
+  - "Distributed Systems Engineer"
+  - "Systems Engineer"
+
+  # Python
+  - "Python Developer"
+  - "Senior Python Developer"
+  - "Python Engineer"
+  - "Senior Python Engineer"
+
+  # AI / GenAI / LLM
+  - "AI Engineer"
+  - "Senior AI Engineer"
+  - "AI Software Engineer"
+  - "Applied AI Engineer"
+  - "Senior Applied AI Engineer"
+  - "Generative AI Engineer"
+  - "Senior Generative AI Engineer"
+  - "GenAI Engineer"
+  - "LLM Engineer"
+  - "Senior LLM Engineer"
+  - "AI/ML Engineer"
+  - "Machine Learning Engineer"
+  - "Senior Machine Learning Engineer"
+  - "ML Engineer"
+
+  # Agentic AI / Forward Deployed
+  - "Agentic AI Engineer"
+  - "AI Agent Engineer"
+  - "AI Agents Engineer"
+  - "Forward Deployed Engineer"
+  - "Forward Deployed Software Engineer"
+  - "Forward Deployed AI Engineer"
+  - "Forward Deployed Engineer - Software Engineer"
+  - "Customer Engineer"
+  - "Solutions Engineer"
+
+  # Architecture / technical leadership
+  - "Software Architect"
+  - "Solution Architect"
+  - "Solutions Architect"
+  - "Technical Architect"
+  - "Cloud Architect"
+  - "Platform Architect"
+
+  # Cloud / infrastructure
+  - "Cloud Engineer"
+  - "Senior Cloud Engineer"
+  - "Cloud Software Engineer"
+  - "Infrastructure Engineer"
+  - "Senior Infrastructure Engineer"
+
+# ------------------------------------------------------------
+# LOCATIONS
+# ------------------------------------------------------------
+# Include major Indian engineering hubs plus Remote India.
+# "India" is intentionally included because many remote-first
+# companies describe their location simply as "India".
+# ------------------------------------------------------------
+locations:
+  - "Remote"
+  - "Remote India"
+  - "India"
+
+  # Delhi NCR
+  - "Delhi NCR"
+  - "Delhi"
+  - "NCR"
+  - "Noida"
+  - "Greater Noida"
+  - "Gurgaon"
+  - "Gurugram"
+
+  # Major engineering hubs
+  - "Bengaluru"
+  - "Bangalore"
+  - "Hyderabad"
+  - "Pune"
+  - "Mumbai"
+  - "Chennai"
+
+# ------------------------------------------------------------
+# EXCLUSIONS
+# ------------------------------------------------------------
+# Example: exclude junior/QA/mobile-only roles, but keep senior
+# levels in since this example config targets senior IC roles.
+# ------------------------------------------------------------
+exclude_keywords:
+
+  - "Senior Staff"
+  - "Staff+"
+  - "Director"
+  - "Vice President"
+  - "VP "
+  - "Chief"
+  - "CTO"
+  - "Head of"
+  - "Intern"
+  - "Internship"
+  - "Graduate"
+  - "Fresher"
+  - "Trainee"
+  - "Apprentice"
+  - "Junior"
+  - "Associate"
+  - "Entry Level"
+
+  # Roles that are generally outside your target
+  - "SDET"
+  - "QA Engineer"
+  - "Quality Assurance"
+  - "Test Engineer"
+  - "Automation Tester"
+  - "Frontend Developer"
+  - "Frontend Engineer"
+  - "React Developer"
+  - "React Native Developer"
+  - "Mobile Developer"
+  - "Android Developer"
+  - "iOS Developer"
+  - "WordPress"
+  - "Sales Engineer"
+  - "Support Engineer"
+  - "Technical Support"
+
+# ------------------------------------------------------------
+# COMPANIES TO TRACK DIRECTLY VIA ATS
+# ------------------------------------------------------------
+# Example list below — replace with companies relevant to your
+# own search.
+#
+# ATS board tokens:
+# Greenhouse -> boards.greenhouse.io/<token>
+# Lever      -> jobs.lever.co/<token>
+# Ashby      -> jobs.ashbyhq.com/<token>
+# ------------------------------------------------------------
+companies:
+
+  # AI / enterprise / agentic AI
+  - name: "Level AI"
+    ats: lever
+    board_token: "levelai"
+
+  - name: "HighLevel"
+    ats: lever
+    board_token: "gohighlevel"
+
+  - name: "KlearNow.ai"
+    ats: lever
+    board_token: "klearnow"
+
+  - name: "ElevenLabs"
+    ats: ashby
+    board_token: "elevenlabs"
+
+  - name: "Ema"
+    ats: ashby
+    board_token: "ema"
+
+  - name: "Sarvam AI"
+    ats: ashby
+    board_token: "sarvam"
+
+  - name: "Emergence"
+    ats: ashby
+    board_token: "emergence"
+
+  - name: "MightyBot"
+    ats: ashby
+    board_token: "MightyBot"
+
+  - name: "Cartesia"
+    ats: ashby
+    board_token: "cartesia"
+
+  - name: "Reacher"
+    ats: ashby
+    board_token: "reacher"
+
+# ------------------------------------------------------------
+# BROAD SEARCH
+# ------------------------------------------------------------
+# Adzuna becomes the discovery layer.
+#
+# Direct ATS = high-confidence auto-apply lane
+# Adzuna     = broad discovery / notify lane
+# ------------------------------------------------------------
+broad_search:
+  enabled: true
+  adzuna_country: "in"
+  results_per_search: 20
+  max_days_old: 2
+
+# ------------------------------------------------------------
+# APPLICANT PROFILE
+# ------------------------------------------------------------
+applicant:
+
+  first_name: "Your"
+  last_name: "Name"
+
+  email: "you@example.com"
+  phone: "+10000000000"
+
+  linkedin_url: "https://www.linkedin.com/in/yourprofile/"
+
+  portfolio_url: "https://yourportfolio.example.com/"
+
+  # Recommended: convert your resume to PDF and place it here.
+  resume_path: "data/resume.pdf"
+
+  cover_letter_path: "data/cover_letter.pdf"
+
+# ------------------------------------------------------------
+# APPLICATION BEHAVIOR
+# ------------------------------------------------------------
+settings:
+
+  # NEVER guess answers to employer-specific questions.
+  # Prevents bad submissions and inaccurate declarations.
+  auto_submit_only_if_fully_answered: false
+
+  # Reasonable daily/run ceiling.
+  max_applications_per_run: 5

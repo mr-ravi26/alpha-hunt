@@ -1,0 +1,58 @@
+name: Bug report
+description: Something isn't working as expected
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear description of the bug.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Configure ... in config.yaml
+        2. Run `python src/main.py`
+        3. See error
+    validations:
+      required: true
+
+  - type: dropdown
+    id: source
+    attributes:
+      label: Where did this happen?
+      options:
+        - GitHub Actions (scheduled run)
+        - Running locally
+        - Specific ATS (Greenhouse/Lever/Ashby) form-fill
+        - Adzuna broad search
+        - Telegram notifications
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs / error output
+      description: >
+        Paste the error output. **Please redact any personal info**
+        (email, phone, resume content, API keys/tokens).
+      render: shell
+
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      placeholder: e.g. Python 3.11, macOS, GitHub Actions runner

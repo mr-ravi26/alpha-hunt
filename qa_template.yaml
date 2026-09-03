@@ -1,0 +1,38 @@
+# ============================================================
+# Saved answers for common application questions
+# ============================================================
+# Copy this file to qa.yaml and fill in your real answers.
+# The bot matches a form question against these "match" phrases
+# (simple keyword matching against the question text, case-insensitive).
+# Add more entries as you discover new recurring questions from
+# the "needs manual review" notifications.
+
+- match: ["work authorization", "authorized to work", "legally eligible"]
+  answer: "Yes"
+
+- match: ["require sponsorship", "visa sponsorship", "need sponsorship"]
+  answer: "No"
+
+- match: ["notice period"]
+  answer: "30 days"
+
+- match: ["current ctc"]
+  answer: "REPLACE_WITH_YOUR_CURRENT_CTC"
+
+- match: ["expected salary", "salary expectation", "expected ctc"]
+  answer: "REPLACE_WITH_YOUR_EXPECTED_SALARY"
+
+- match: ["years of experience"]
+  answer: "REPLACE_WITH_YOUR_YEARS_OF_EXPERIENCE"
+
+- match: ["why do you want to work", "why are you interested"]
+  answer: "REPLACE_WITH_YOUR_OWN_ANSWER"
+
+- match: ["how did you hear about"]
+  answer: "Company careers page"
+
+- match: ["gender"]
+  answer: "REPLACE_WITH_YOUR_ANSWER_OR_PREFER_NOT_TO_SAY"
+
+- match: ["race", "ethnicity", "veteran status", "disability"]
+  answer: "REPLACE_WITH_YOUR_ANSWER_OR_PREFER_NOT_TO_SAY"

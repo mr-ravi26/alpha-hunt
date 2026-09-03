@@ -1,0 +1,23 @@
+# Personal data — never commit your real application materials
+data/*
+!data/.gitkeep
+
+# Your real filled-in answers (copy qa_template.yaml -> qa.yaml)
+qa.yaml
+
+# Environment / secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
+
+# Raw screen recordings (large binaries) — commit the converted GIF instead
+docs/screenshots/*.MP4
+docs/screenshots/*.mp4
+docs/screenshots/*.mov
